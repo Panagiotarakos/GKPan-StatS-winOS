@@ -17,6 +17,7 @@ namespace GKPanStats
         private long _prevNetOut;
         private DateTime _prevNetTime = DateTime.MinValue;
         private PerformanceCounter? _cpuCounter;
+        public int LastBatteryPct { get; private set; }
 
         public SystemMonitor()
         {
@@ -129,6 +130,7 @@ namespace GKPanStats
                     return $"{label}: {noBattery}";
 
                 var pct = (int)(ps.BatteryLifePercent * 100);
+                LastBatteryPct = pct;
                 var charging = ps.PowerLineStatus == PowerLineStatus.Online;
                 return $"{label}: {pct}%{(charging ? " \u26A1" : "")}";
             }
