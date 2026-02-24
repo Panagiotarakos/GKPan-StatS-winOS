@@ -136,19 +136,21 @@ namespace GKPanStats
 
         private Icon CreateTextIcon(string text, Color bgColor)
         {
-            var bmp = new Bitmap(32, 32);
+            int sz = 64;
+            var bmp = new Bitmap(sz, sz);
             using (var g = Graphics.FromImage(bmp))
             {
                 g.SmoothingMode = SmoothingMode.AntiAlias;
-                g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
+                g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
                 using (var bg = new SolidBrush(bgColor))
                 {
-                    g.FillRectangle(bg, 0, 0, 32, 32);
+                    g.FillRectangle(bg, 0, 0, sz, sz);
                 }
 
-                var fontSize = text.Length <= 2 ? 18f : text.Length <= 3 ? 14f : 11f;
-                using (var font = new Font("Segoe UI", fontSize, System.Drawing.FontStyle.Bold))
+                var fontSize = text.Length <= 1 ? 40f : text.Length <= 2 ? 32f : text.Length <= 3 ? 24f : 18f;
+                using (var font = new Font("Segoe UI", fontSize, System.Drawing.FontStyle.Bold, GraphicsUnit.Pixel))
                 using (var brush = new SolidBrush(Color.White))
                 {
                     var sf = new StringFormat
@@ -156,7 +158,7 @@ namespace GKPanStats
                         Alignment = StringAlignment.Center,
                         LineAlignment = StringAlignment.Center
                     };
-                    g.DrawString(text, font, brush, new RectangleF(0, 0, 32, 32), sf);
+                    g.DrawString(text, font, brush, new RectangleF(0, 0, sz, sz), sf);
                 }
             }
 
