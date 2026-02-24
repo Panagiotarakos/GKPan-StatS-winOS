@@ -16,10 +16,6 @@
     <Product>GKPanStats</Product>
     <Copyright>Copyright (c) 2026 PanagiotarakoS</Copyright>
     <Description>Windows System Monitor - System Tray App</Description>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
 
   <ItemGroup>
