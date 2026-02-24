@@ -42,7 +42,7 @@
             </StackPanel>
 
             <TextBlock HorizontalAlignment="Center" FontSize="13" Margin="0,0,0,8">
-                <Hyperlink NavigateUri="https://github.com/Panagiotarakos/GKPan-StatS-Windows" RequestNavigate="Hyperlink_Click">
+                <Hyperlink NavigateUri="https://github.com/Panagiotarakos/GKPan-StatS-winOS" RequestNavigate="Hyperlink_Click">
                     GitHub
                 </Hyperlink>
             </TextBlock>

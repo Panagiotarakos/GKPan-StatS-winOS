@@ -29,4 +29,4 @@
 [PanagiotarakoS](https://panagiotarakos.com) - [pngs.gr](https://pngs.gr) | [rdev.gr](https://rdev.gr)
 
 ## License
-[MIT License](https://github.com/Panagiotarakos/GKPan-StatS-Windows/blob/main/LICENSE)
+[MIT License](https://github.com/Panagiotarakos/GKPan-StatS-winOS/blob/main/LICENSE)
