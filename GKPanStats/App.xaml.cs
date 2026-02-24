@@ -105,15 +105,15 @@ namespace GKPanStats
             switch (_displayModule)
             {
                 case "CPU":
-                    text = $"{_cpuPct}%";
+                    text = $"{_cpuPct}";
                     color = Color.FromArgb(52, 152, 219);
                     break;
                 case "RAM":
-                    text = $"{_ramPct}%";
+                    text = $"{_ramPct}";
                     color = Color.FromArgb(155, 89, 182);
                     break;
                 case "Disk":
-                    text = $"{_diskPct}%";
+                    text = $"{_diskPct}";
                     color = Color.FromArgb(230, 126, 34);
                     break;
                 case "Net":
@@ -121,7 +121,7 @@ namespace GKPanStats
                     color = Color.FromArgb(46, 204, 113);
                     break;
                 case "Battery":
-                    text = $"{_batPct}%";
+                    text = $"{_batPct}";
                     color = Color.FromArgb(241, 196, 15);
                     break;
                 default:
@@ -147,7 +147,7 @@ namespace GKPanStats
                     g.FillRectangle(bg, 0, 0, 32, 32);
                 }
 
-                var fontSize = text.Length <= 2 ? 14f : text.Length <= 3 ? 11f : 9f;
+                var fontSize = text.Length <= 2 ? 18f : text.Length <= 3 ? 14f : 11f;
                 using (var font = new Font("Segoe UI", fontSize, System.Drawing.FontStyle.Bold))
                 using (var brush = new SolidBrush(Color.White))
                 {
