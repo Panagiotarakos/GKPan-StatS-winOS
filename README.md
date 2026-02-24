@@ -35,6 +35,14 @@
 2. Open `GKPanStats.sln` in Visual Studio
 3. Build & Run (F5)
 
+## Build standalone exe
+Open Command Prompt (cmd) and run:
+```
+cd /d <path-to-project-folder>
+dotnet publish GKPanStats\GKPanStats.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o publish
+```
+The standalone `GKPanStats.exe` will be in the `publish` folder.
+
 ## Author
 [PanagiotarakoS](https://panagiotarakos.com) - [pngs.gr](https://pngs.gr) | [rdev.gr](https://rdev.gr)
 
