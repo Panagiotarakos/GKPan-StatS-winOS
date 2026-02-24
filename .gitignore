@@ -1,0 +1,25 @@
+## Build
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.userosscache
+*.userprefs
+
+## NuGet
+packages/
+*.nupkg
+project.lock.json
+
+## Windows
+Thumbs.db
+Desktop.ini
+*.tmp

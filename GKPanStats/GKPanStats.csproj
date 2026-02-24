@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <AssemblyName>GKPanStats</AssemblyName>
+    <RootNamespace>GKPanStats</RootNamespace>
+    <Version>2602001.0.0</Version>
+    <FileVersion>2602001.0.0.0</FileVersion>
+    <AssemblyVersion>2602001.0.0.0</AssemblyVersion>
+    <Company>PanagiotarakoS</Company>
+    <Product>GKPanStats</Product>
+    <Copyright>Copyright (c) 2026 PanagiotarakoS</Copyright>
+    <Description>Windows System Monitor - System Tray App</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app.ico" />
+  </ItemGroup>
+
+</Project>
