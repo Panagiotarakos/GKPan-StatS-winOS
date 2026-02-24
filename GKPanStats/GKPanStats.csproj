@@ -16,6 +16,7 @@
     <Product>GKPanStats</Product>
     <Copyright>Copyright (c) 2026 PanagiotarakoS</Copyright>
     <Description>Windows System Monitor - System Tray App</Description>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
