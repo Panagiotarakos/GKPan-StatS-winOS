@@ -16,7 +16,7 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Publish single-file exe
-        run: dotnet publish GKPanStats\GKPanStats.csproj -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true -o publish
+        run: dotnet publish GKPanStats/GKPanStats.csproj -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true -o publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
