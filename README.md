@@ -1,6 +1,10 @@
 # GKPanStats
 
 <p align="center">
+  <img src="GKPanStatS.png" width="200" alt="GKPanStats Icon">
+</p>
+
+<p align="center">
   <b>Windows System Monitor - System Tray App</b>
 </p>
 
