@@ -8,6 +8,12 @@
   <b>Windows System Monitor - System Tray App</b>
 </p>
 
+<p align="center">
+  <img src="gkpan-stats-system-tray.png" width="300" alt="System Tray">
+  &nbsp;&nbsp;
+  <img src="gkpan-stats-about.png" width="260" alt="About">
+</p>
+
 ## Features
 - CPU usage monitoring
 - RAM usage monitoring
