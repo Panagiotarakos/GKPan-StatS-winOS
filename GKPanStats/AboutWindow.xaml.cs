@@ -10,7 +10,7 @@ namespace GKPanStats
         {
             InitializeComponent();
             var L = Strings.GetStrings();
-            VersionText.Text = $"{L["version"]} 2602001";
+            VersionText.Text = $"{L["version"]} 260201";
             MonitorText.Text = L["monitor"];
             CreatedByText.Text = L["created_by"];
         }
